@@ -2,7 +2,7 @@
   "source_commit_sha": "a839afd08853c3da4d66568729741dd46bcb12e5",
   "public_export_commit_sha": "UNKNOWN",
   "export_timestamp": "2026-06-12T00:03:39.7759868Z",
-  "included_file_count": 133,
+  "included_file_count": 131,
   "excluded_patterns": [
     "version control metadata",
     "agent working configuration and notes",
@@ -25,6 +25,7 @@
   "notes": [
     "Exporter copies only the public challenge allowlist.",
     "Allowed safe values are documented in README.md and docs/deployment.md.",
-    "No PDF, DOCX, or SVG files are included. docs/architecture.png has zero PNG text metadata chunks."
+    "No PDF, DOCX, or SVG files are included. docs/architecture.png has zero PNG text metadata chunks.",
+    "Red-team-only tests are omitted from the public judge-facing CI path."
   ]
 }

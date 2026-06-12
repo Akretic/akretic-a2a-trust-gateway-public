@@ -27,7 +27,6 @@
 | `test_knowledge_requires_policy_receipt` | Knowledge Agent rejects governed retrieval without a valid receipt |
 | `test_corpus_explorer_access` | Corpus Explorer shows metadata and access reasons without denied previews |
 | `test_model_context_envelope` | Model context envelope exposes IDs and hashes without prompt text |
-| `test_red_team_challenge_cards` | Red-team challenge cards are present for the required abuse cases |
 | `test_prompt_injection_tool_gate` | Prompt-injected export requests map to approval-gated side-effect handling |
 | `test_a2a_trust_receipt` | A2A Trust Receipt summarizes evidence, A2A, retrieval, model, approval, and verification state |
 
