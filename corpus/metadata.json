@@ -1,0 +1,191 @@
+{
+  "documents": [
+    {
+      "source_id": "vendornova_profile",
+      "path": "documents/vendornova_profile.md",
+      "title": "VendorNova profile",
+      "classification": "public",
+      "source_type": "synthetic_internal",
+      "document_type": "vendor_profile",
+      "allowed_groups": [
+        "procurement_user",
+        "security_reviewer",
+        "legal_reviewer"
+      ],
+      "external_release_allowed": true,
+      "sensitivity_tags": [],
+      "vendor_id": "vendornova",
+      "created_at": "2026-05-27T00:00:00Z",
+      "content_sha256": "782733f6390ad916d7513800ee03e72a5b7386e40daeb7c1bf67349122bd5420",
+      "storage_uri": "local://corpus/documents/vendornova_profile.md",
+      "indexed": true
+    },
+    {
+      "source_id": "vendornova_security_questionnaire",
+      "path": "documents/vendornova_security_questionnaire.md",
+      "title": "VendorNova security questionnaire",
+      "classification": "internal",
+      "source_type": "synthetic_internal",
+      "document_type": "security_questionnaire",
+      "allowed_groups": [
+        "security_reviewer"
+      ],
+      "external_release_allowed": false,
+      "sensitivity_tags": [
+        "security"
+      ],
+      "vendor_id": "vendornova",
+      "created_at": "2026-05-27T00:00:00Z",
+      "content_sha256": "6c62d5f9f3dfa4bebb91c017cc74d4cc3cc9bedc9b297122b0d3c196a6fc5575",
+      "storage_uri": "local://corpus/documents/vendornova_security_questionnaire.md",
+      "indexed": true
+    },
+    {
+      "source_id": "procurement_policy",
+      "path": "documents/procurement_policy.md",
+      "title": "Procurement policy excerpt",
+      "classification": "internal",
+      "source_type": "synthetic_internal",
+      "document_type": "policy",
+      "allowed_groups": [
+        "procurement_user",
+        "security_reviewer"
+      ],
+      "external_release_allowed": false,
+      "sensitivity_tags": [
+        "procurement"
+      ],
+      "vendor_id": "vendornova",
+      "created_at": "2026-05-27T00:00:00Z",
+      "content_sha256": "c2349ada2977464f1ebfe02eb31d33023b704e4a2576ca7d04702624bf500f71",
+      "storage_uri": "local://corpus/documents/procurement_policy.md",
+      "indexed": true
+    },
+    {
+      "source_id": "infosec_vendor_policy",
+      "path": "documents/infosec_vendor_policy.md",
+      "title": "InfoSec vendor policy excerpt",
+      "classification": "restricted",
+      "source_type": "synthetic_internal",
+      "document_type": "policy",
+      "allowed_groups": [
+        "security_reviewer"
+      ],
+      "external_release_allowed": false,
+      "sensitivity_tags": [
+        "security",
+        "restricted"
+      ],
+      "vendor_id": "vendornova",
+      "created_at": "2026-05-27T00:00:00Z",
+      "content_sha256": "7483a0db4877d59a7f01dda991f37e167f609660ef40443122c3559e9d8b117e",
+      "storage_uri": "local://corpus/documents/infosec_vendor_policy.md",
+      "indexed": true
+    },
+    {
+      "source_id": "contract_review_checklist",
+      "path": "documents/contract_review_checklist.md",
+      "title": "Contract review checklist",
+      "classification": "restricted",
+      "source_type": "synthetic_internal",
+      "document_type": "contract_checklist",
+      "allowed_groups": [
+        "legal_reviewer",
+        "security_reviewer"
+      ],
+      "external_release_allowed": false,
+      "sensitivity_tags": [
+        "legal",
+        "restricted"
+      ],
+      "vendor_id": "vendornova",
+      "created_at": "2026-05-27T00:00:00Z",
+      "content_sha256": "37a6d7993fe01433a857a90499041d6dd9d7b353683d3476724c5b95bbc71f4d",
+      "storage_uri": "local://corpus/documents/contract_review_checklist.md",
+      "indexed": true
+    },
+    {
+      "source_id": "public_seed_vendornova_001",
+      "path": "documents/public_seed_vendornova_001.md",
+      "title": "VendorNova public profile snippet",
+      "classification": "public",
+      "source_type": "synthetic_public",
+      "document_type": "public_seed",
+      "allowed_groups": [
+        "procurement_user",
+        "security_reviewer",
+        "legal_reviewer"
+      ],
+      "external_release_allowed": true,
+      "sensitivity_tags": [],
+      "vendor_id": "vendornova",
+      "created_at": "2026-05-27T00:00:00Z",
+      "content_sha256": "ba565c03ff7e9ddeaa60f85e8ecc1860812b02e10cec7fb1a17b254ced98c4fc",
+      "storage_uri": "local://corpus/documents/public_seed_vendornova_001.md",
+      "indexed": true
+    },
+    {
+      "source_id": "public_seed_vendornova_002",
+      "path": "documents/public_seed_vendornova_002.md",
+      "title": "VendorNova public risk signal snippet",
+      "classification": "public",
+      "source_type": "synthetic_public",
+      "document_type": "public_seed",
+      "allowed_groups": [
+        "procurement_user",
+        "security_reviewer",
+        "legal_reviewer"
+      ],
+      "external_release_allowed": true,
+      "sensitivity_tags": [],
+      "vendor_id": "vendornova",
+      "created_at": "2026-05-27T00:00:00Z",
+      "content_sha256": "15cabd7220751c0c2a17f49e4623e896c3dec658433d7cad3b5e4d1f29d4a7bc",
+      "storage_uri": "local://corpus/documents/public_seed_vendornova_002.md",
+      "indexed": true
+    },
+    {
+      "source_id": "executive_acquisition_memo",
+      "path": "documents/executive_acquisition_memo.md",
+      "title": "Executive acquisition memo",
+      "classification": "executive-only",
+      "source_type": "synthetic_internal",
+      "document_type": "executive_memo",
+      "allowed_groups": [
+        "executive_admin"
+      ],
+      "external_release_allowed": false,
+      "sensitivity_tags": [
+        "executive",
+        "denial-test"
+      ],
+      "vendor_id": "vendornova",
+      "created_at": "2026-05-27T00:00:00Z",
+      "content_sha256": "1bba033a4ecf8d7a50d9260db2e7e01751d194661aa49820441cfa64ac79cf3b",
+      "storage_uri": "local://corpus/documents/executive_acquisition_memo.md",
+      "indexed": true
+    },
+    {
+      "source_id": "injected_vendor_note",
+      "path": "documents/injected_vendor_note.md",
+      "title": "Injected vendor note",
+      "classification": "internal",
+      "source_type": "synthetic_internal",
+      "document_type": "vendor_note",
+      "allowed_groups": [
+        "procurement_user",
+        "security_reviewer",
+        "legal_reviewer"
+      ],
+      "external_release_allowed": false,
+      "sensitivity_tags": [
+        "prompt-injection-test"
+      ],
+      "vendor_id": "vendornova",
+      "created_at": "2026-05-27T00:00:00Z",
+      "content_sha256": "3e8c3ab366f67ef895c4d10f99e4b282c9e2f0a0fd6d2dc94d079b15bf28aed2",
+      "storage_uri": "local://corpus/documents/injected_vendor_note.md",
+      "indexed": true
+    }
+  ]
+}

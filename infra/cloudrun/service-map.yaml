@@ -1,0 +1,31 @@
+services:
+  demo_ui:
+    cloud_run_name: akretic-demo-ui
+    module: demo_ui.main:app
+    port: 8080
+    ingress: public
+  root_orchestrator:
+    cloud_run_name: akretic-root-orchestrator
+    module: agents.root_orchestrator.main:app
+    port: 8100
+    ingress: private
+  policy_agent:
+    cloud_run_name: akretic-policy-agent
+    module: services.gate0_lite.main:app
+    port: 8101
+    ingress: private
+  knowledge_agent:
+    cloud_run_name: akretic-knowledge-agent
+    module: services.rag_dmz_lite.main:app
+    port: 8102
+    ingress: private
+  research_agent:
+    cloud_run_name: akretic-research-agent
+    module: agents.research_agent.main:app
+    port: 8103
+    ingress: private
+  approval_evidence_agent:
+    cloud_run_name: akretic-approval-evidence
+    module: agents.approval_evidence_agent.main:app
+    port: 8104
+    ingress: private

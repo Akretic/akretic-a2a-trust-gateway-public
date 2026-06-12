@@ -1,0 +1,44 @@
+{
+  "protocolVersion": "0.3",
+  "name": "akretic-approval-evidence-agent",
+  "description": "Approval state machine and hash-chain evidence agent.",
+  "version": "0.1.0",
+  "url": "http://127.0.0.1:8104",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "authentication": {
+    "schemes": [
+      "demo-header"
+    ],
+    "notes": "Verify and report endpoints require admin/reviewer demo persona."
+  },
+  "skills": [
+    {
+      "id": "request_approval",
+      "name": "request_approval",
+      "description": "Create approval request."
+    },
+    {
+      "id": "decide_approval",
+      "name": "decide_approval",
+      "description": "Approve or reject a pending approval request."
+    },
+    {
+      "id": "record_event",
+      "name": "record_event",
+      "description": "Append evidence event."
+    },
+    {
+      "id": "verify_chain",
+      "name": "verify_chain",
+      "description": "Verify evidence hash chain."
+    },
+    {
+      "id": "generate_report",
+      "name": "generate_report",
+      "description": "Generate evidence report."
+    }
+  ]
+}

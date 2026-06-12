@@ -1,0 +1,39 @@
+{
+  "protocolVersion": "0.3",
+  "name": "akretic-knowledge-agent",
+  "description": "RAG DMZ-lite knowledge agent that filters synthetic corpus before model context.",
+  "version": "0.1.0",
+  "url": "http://127.0.0.1:8102",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "authentication": {
+    "schemes": [
+      "demo-header"
+    ],
+    "notes": "P0 demo uses derived persona headers; do not trust body claims."
+  },
+  "skills": [
+    {
+      "id": "retrieve_permitted_context",
+      "name": "retrieve_permitted_context",
+      "description": "Return only permitted corpus chunks."
+    },
+    {
+      "id": "retrieve_by_query",
+      "name": "retrieve_by_query",
+      "description": "Run lexical or configured embedding retrieval over permitted corpus chunks."
+    },
+    {
+      "id": "list_sources",
+      "name": "list_sources",
+      "description": "List synthetic source metadata."
+    },
+    {
+      "id": "redact_context",
+      "name": "redact_context",
+      "description": "Support context minimization for permitted chunks."
+    }
+  ]
+}

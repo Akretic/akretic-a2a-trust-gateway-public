@@ -1,0 +1,36 @@
+personas:
+  procurement_user:
+    actor_id: user-procurement-001
+    tenant_id: tenant-demo
+    groups: [procurement_user]
+    role: procurement_user
+    auth_source: demo_identity_adapter
+    session_id: demo-session-procurement
+  security_reviewer:
+    actor_id: user-security-001
+    tenant_id: tenant-demo
+    groups: [security_reviewer]
+    role: security_reviewer
+    auth_source: demo_identity_adapter
+    session_id: demo-session-security
+  legal_reviewer:
+    actor_id: user-legal-001
+    tenant_id: tenant-demo
+    groups: [legal_reviewer]
+    role: legal_reviewer
+    auth_source: demo_identity_adapter
+    session_id: demo-session-legal
+  admin:
+    actor_id: user-admin-001
+    tenant_id: tenant-demo
+    groups: [admin]
+    role: admin
+    auth_source: demo_identity_adapter
+    session_id: demo-session-admin
+  executive_admin:
+    actor_id: user-exec-001
+    tenant_id: tenant-demo
+    groups: [executive_admin, admin]
+    role: executive_admin
+    auth_source: demo_identity_adapter
+    session_id: demo-session-exec

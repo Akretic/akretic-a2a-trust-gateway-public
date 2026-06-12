@@ -1,0 +1,22 @@
+flowchart LR
+  user["Demo user"]
+  ui["Demo UI<br/>Cloud Run public target"]
+  root["Root Orchestrator<br/>Cloud Run private"]
+  gate["Policy Agent<br/>Gate0-lite"]
+  rag["Knowledge Agent<br/>RAG DMZ-lite"]
+  research["Research Agent<br/>seeded public snippets"]
+  approval["Approval/Evidence Agent<br/>approval state machine"]
+  ledger["Hash-chained evidence ledger<br/>Cloud Storage"]
+  gemini["Vertex AI Gemini<br/>permitted context only"]
+
+  user --> ui
+  ui -->|"derived demo persona + ID token"| root
+  root -->|"A2A authorize_intent"| gate
+  root -->|"A2A retrieve_permitted_context"| rag
+  root -->|"seeded public-risk lookup"| research
+  root -->|"request_approval / verify / report"| approval
+  rag -->|"allow/deny evidence"| ledger
+  gate -->|"policy evidence"| ledger
+  approval -->|"approval + report evidence"| ledger
+  root -->|"permitted chunks, denied IDs only"| gemini
+  root -->|"summary + decision evidence"| ledger

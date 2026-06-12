@@ -1,0 +1,29 @@
+{
+  "protocolVersion": "0.3",
+  "name": "akretic-research-agent",
+  "description": "Seeded public research agent for controlled VendorNova public-risk snippets.",
+  "version": "0.1.0",
+  "url": "http://127.0.0.1:8103",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "authentication": {
+    "schemes": [
+      "demo-header"
+    ],
+    "notes": "P0 demo uses seeded sources only."
+  },
+  "skills": [
+    {
+      "id": "research_vendor_profile",
+      "name": "research_vendor_profile",
+      "description": "Return seeded public vendor profile snippets."
+    },
+    {
+      "id": "check_public_risk_signals",
+      "name": "check_public_risk_signals",
+      "description": "Return seeded public risk signals."
+    }
+  ]
+}

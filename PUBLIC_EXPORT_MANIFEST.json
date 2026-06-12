@@ -1,0 +1,30 @@
+{
+  "source_commit_sha": "a839afd08853c3da4d66568729741dd46bcb12e5",
+  "public_export_commit_sha": "UNKNOWN",
+  "export_timestamp": "2026-06-12T00:03:39.7759868Z",
+  "included_file_count": 133,
+  "excluded_patterns": [
+    "version control metadata",
+    "agent working configuration and notes",
+    "virtual environments and caches",
+    "generated output folders and handoff packets",
+    "local evidence, screenshots, archives, and review packets",
+    "environment files and credential-like files",
+    "internal deployment notes and workstation-specific runbooks"
+  ],
+  "sanitized_replacements": [
+    "public docs use safe deployment values",
+    "public source-of-truth uses challenge prototype claims only",
+    "architecture image is included under docs"
+  ],
+  "pytest_result": "pass: clean export pytest -q with project virtualenv",
+  "gitleaks_result": "pass: gitleaks detect --no-git --source clean export --redact",
+  "scan_result": "pass: exporter scan and explicit rg scan reviewed; only optional service account safe values/env names matched the service-account check",
+  "live_demo_url": "YOUR_PUBLIC_DEMO_URL",
+  "final_cloud_packet_name": "UNKNOWN",
+  "notes": [
+    "Exporter copies only the public challenge allowlist.",
+    "Allowed safe values are documented in README.md and docs/deployment.md.",
+    "No PDF, DOCX, or SVG files are included. docs/architecture.png has zero PNG text metadata chunks."
+  ]
+}

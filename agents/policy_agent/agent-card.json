@@ -1,0 +1,44 @@
+{
+  "protocolVersion": "0.3",
+  "name": "akretic-policy-agent",
+  "description": "Gate0-lite deterministic policy agent for allow, deny, and approval_required decisions.",
+  "version": "0.1.0",
+  "url": "http://127.0.0.1:8101",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "authentication": {
+    "schemes": [
+      "demo-header"
+    ],
+    "notes": "P0 demo uses derived persona headers; do not trust body claims."
+  },
+  "skills": [
+    {
+      "id": "authorize_intent",
+      "name": "authorize_intent",
+      "description": "Evaluate actor/action/resource/context."
+    },
+    {
+      "id": "classify_resource",
+      "name": "classify_resource",
+      "description": "Return demo resource classification."
+    },
+    {
+      "id": "explain_decision",
+      "name": "explain_decision",
+      "description": "Explain deterministic policy decision."
+    },
+    {
+      "id": "issue_decision_receipt",
+      "name": "issue_decision_receipt",
+      "description": "Issue a short-lived deterministic decision receipt."
+    },
+    {
+      "id": "validate_decision_receipt",
+      "name": "validate_decision_receipt",
+      "description": "Validate a short-lived deterministic decision receipt."
+    }
+  ]
+}
