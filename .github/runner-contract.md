@@ -1,8 +1,8 @@
 # Public CI runner contract
 
 The `ci` workflow selects group `akretic-public-ci` and labels
-`[self-hosted, Linux, X64, akretic-public-ci]`. Admission requires a separate
-public-only pool of fresh Ubuntu 24.04 x64 VMs reset after every job. Do not
+`[self-hosted, Linux, ARM64, akretic-public-ci]`. Admission requires a separate
+public-only pool of fresh Ubuntu 24.04 ARM64 VMs reset after every job. Do not
 admit these public repository jobs to a private or production runner group.
 The pool must isolate untrusted branch/fork code from private networks,
 production credentials and other jobs. This source change does not create,
