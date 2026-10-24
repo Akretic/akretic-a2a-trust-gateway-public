@@ -4,14 +4,22 @@ on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on:
+      group: akretic-public-ci
+      labels: [self-hosted, Linux, X64, akretic-public-ci]
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - run: pip install -r requirements.txt
-      - run: python -m playwright install chromium
+      - run: python -m playwright install --with-deps chromium
       - run: pytest -q
